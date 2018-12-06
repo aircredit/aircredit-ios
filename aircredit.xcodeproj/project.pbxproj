@@ -15,6 +15,9 @@
 		92608D2721B94C89000A419A /* aircreditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D2621B94C89000A419A /* aircreditTests.swift */; };
 		92608D3221B94C89000A419A /* aircreditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D3121B94C89000A419A /* aircreditUITests.swift */; };
 		92608D4321B95495000A419A /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 92608D4221B95495000A419A /* video.mov */; };
+		AA63CD5A9B3F669B329BAD11 /* Pods_aircredit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40499463087BAA671AEEA936 /* Pods_aircredit.framework */; };
+		AEF68E5986C7700A2A7B0760 /* Pods_aircreditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A90EA6DC42161D197E9B8FA /* Pods_aircreditTests.framework */; };
+		D02254C48ED6060B83E2DB99 /* Pods_aircreditUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21662587261C8CC273D9D850 /* Pods_aircreditUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A90EA6DC42161D197E9B8FA /* Pods_aircreditTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aircreditTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21662587261C8CC273D9D850 /* Pods_aircreditUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aircreditUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40499463087BAA671AEEA936 /* Pods_aircredit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aircredit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE68AA2A5E3DD4ECA4B5668 /* Pods-aircredit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircredit.debug.xcconfig"; path = "Target Support Files/Pods-aircredit/Pods-aircredit.debug.xcconfig"; sourceTree = "<group>"; };
+		84133FEE35CCA0638A2A0A71 /* Pods-aircreditTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditTests.debug.xcconfig"; path = "Target Support Files/Pods-aircreditTests/Pods-aircreditTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92608D0E21B94C88000A419A /* aircredit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aircredit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92608D1121B94C88000A419A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92608D1321B94C88000A419A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		92608D3121B94C89000A419A /* aircreditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aircreditUITests.swift; sourceTree = "<group>"; };
 		92608D3321B94C89000A419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92608D4221B95495000A419A /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
+		A1BCED19F649EF9D9CDBA032 /* Pods-aircreditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditUITests.debug.xcconfig"; path = "Target Support Files/Pods-aircreditUITests/Pods-aircreditUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A86BB9519EB34D8DB4DF9CB3 /* Pods-aircredit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircredit.release.xcconfig"; path = "Target Support Files/Pods-aircredit/Pods-aircredit.release.xcconfig"; sourceTree = "<group>"; };
+		B3E39B43CCCD7F6FA33EE9A9 /* Pods-aircreditTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditTests.release.xcconfig"; path = "Target Support Files/Pods-aircreditTests/Pods-aircreditTests.release.xcconfig"; sourceTree = "<group>"; };
+		D9EB56CE9B6B57D88CF08C62 /* Pods-aircreditUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditUITests.release.xcconfig"; path = "Target Support Files/Pods-aircreditUITests/Pods-aircreditUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA63CD5A9B3F669B329BAD11 /* Pods_aircredit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEF68E5986C7700A2A7B0760 /* Pods_aircreditTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02254C48ED6060B83E2DB99 /* Pods_aircreditUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B375814F8B60CAC9D91C470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40499463087BAA671AEEA936 /* Pods_aircredit.framework */,
+				0A90EA6DC42161D197E9B8FA /* Pods_aircreditTests.framework */,
+				21662587261C8CC273D9D850 /* Pods_aircreditUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5336A7F3684FCB552AA1DDA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FE68AA2A5E3DD4ECA4B5668 /* Pods-aircredit.debug.xcconfig */,
+				A86BB9519EB34D8DB4DF9CB3 /* Pods-aircredit.release.xcconfig */,
+				84133FEE35CCA0638A2A0A71 /* Pods-aircreditTests.debug.xcconfig */,
+				B3E39B43CCCD7F6FA33EE9A9 /* Pods-aircreditTests.release.xcconfig */,
+				A1BCED19F649EF9D9CDBA032 /* Pods-aircreditUITests.debug.xcconfig */,
+				D9EB56CE9B6B57D88CF08C62 /* Pods-aircreditUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		92608D0521B94C88000A419A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				92608D2521B94C89000A419A /* aircreditTests */,
 				92608D3021B94C89000A419A /* aircreditUITests */,
 				92608D0F21B94C88000A419A /* Products */,
+				5336A7F3684FCB552AA1DDA1 /* Pods */,
+				4B375814F8B60CAC9D91C470 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92608D3621B94C89000A419A /* Build configuration list for PBXNativeTarget "aircredit" */;
 			buildPhases = (
+				5BF547BFC661931FBE96FB3F /* [CP] Check Pods Manifest.lock */,
 				92608D0A21B94C88000A419A /* Sources */,
 				92608D0B21B94C88000A419A /* Frameworks */,
 				92608D0C21B94C88000A419A /* Resources */,
+				15B18CB796B84B5037A8204D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92608D3921B94C89000A419A /* Build configuration list for PBXNativeTarget "aircreditTests" */;
 			buildPhases = (
+				914967AD27E70EA4ACEED98A /* [CP] Check Pods Manifest.lock */,
 				92608D1E21B94C89000A419A /* Sources */,
 				92608D1F21B94C89000A419A /* Frameworks */,
 				92608D2021B94C89000A419A /* Resources */,
@@ -170,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92608D3C21B94C89000A419A /* Build configuration list for PBXNativeTarget "aircreditUITests" */;
 			buildPhases = (
+				A0E78E205744394590721292 /* [CP] Check Pods Manifest.lock */,
 				92608D2921B94C89000A419A /* Sources */,
 				92608D2A21B94C89000A419A /* Frameworks */,
 				92608D2B21B94C89000A419A /* Resources */,
@@ -254,6 +299,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B18CB796B84B5037A8204D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-aircredit/Pods-aircredit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LGSideMenuController/LGSideMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LGSideMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-aircredit/Pods-aircredit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF547BFC661931FBE96FB3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aircredit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		914967AD27E70EA4ACEED98A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aircreditTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0E78E205744394590721292 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aircreditUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92608D0A21B94C88000A419A /* Sources */ = {
@@ -434,6 +570,7 @@
 		};
 		92608D3721B94C89000A419A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE68AA2A5E3DD4ECA4B5668 /* Pods-aircredit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +589,7 @@
 		};
 		92608D3821B94C89000A419A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86BB9519EB34D8DB4DF9CB3 /* Pods-aircredit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +608,7 @@
 		};
 		92608D3A21B94C89000A419A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84133FEE35CCA0638A2A0A71 /* Pods-aircreditTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +630,7 @@
 		};
 		92608D3B21B94C89000A419A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E39B43CCCD7F6FA33EE9A9 /* Pods-aircreditTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +652,7 @@
 		};
 		92608D3D21B94C89000A419A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1BCED19F649EF9D9CDBA032 /* Pods-aircreditUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +673,7 @@
 		};
 		92608D3E21B94C89000A419A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EB56CE9B6B57D88CF08C62 /* Pods-aircreditUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
