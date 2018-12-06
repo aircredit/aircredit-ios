@@ -15,12 +15,6 @@
 		92608D2721B94C89000A419A /* aircreditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D2621B94C89000A419A /* aircreditTests.swift */; };
 		92608D3221B94C89000A419A /* aircreditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D3121B94C89000A419A /* aircreditUITests.swift */; };
 		92608D7221B998C3000A419A /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 92608D7121B998C3000A419A /* video.mov */; };
-		92608D7521B99987000A419A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D7321B99986000A419A /* MenuViewController.swift */; };
-		92608D7621B99987000A419A /* MenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D7421B99986000A419A /* MenuViewCell.swift */; };
-		92608D7921B9999C000A419A /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D7721B9999B000A419A /* RightViewCell.swift */; };
-		92608D7A21B9999C000A419A /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D7821B9999B000A419A /* RightViewController.swift */; };
-		92608D7D21B99A17000A419A /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D7C21B99A17000A419A /* NavigationController.swift */; };
-		92608D7F21B99A7A000A419A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D7E21B99A79000A419A /* MainViewController.swift */; };
 		92608D8221B99F0A000A419A /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D8121B99F0A000A419A /* DeviceInfo.swift */; };
 		AA63CD5A9B3F669B329BAD11 /* Pods_aircredit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40499463087BAA671AEEA936 /* Pods_aircredit.framework */; };
 		AEF68E5986C7700A2A7B0760 /* Pods_aircreditTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A90EA6DC42161D197E9B8FA /* Pods_aircreditTests.framework */; };
@@ -64,12 +58,6 @@
 		92608D3121B94C89000A419A /* aircreditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aircreditUITests.swift; sourceTree = "<group>"; };
 		92608D3321B94C89000A419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92608D7121B998C3000A419A /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
-		92608D7321B99986000A419A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		92608D7421B99986000A419A /* MenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewCell.swift; sourceTree = "<group>"; };
-		92608D7721B9999B000A419A /* RightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewCell.swift; sourceTree = "<group>"; };
-		92608D7821B9999B000A419A /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
-		92608D7C21B99A17000A419A /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		92608D7E21B99A79000A419A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		92608D8121B99F0A000A419A /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		A1BCED19F649EF9D9CDBA032 /* Pods-aircreditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditUITests.debug.xcconfig"; path = "Target Support Files/Pods-aircreditUITests/Pods-aircreditUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A86BB9519EB34D8DB4DF9CB3 /* Pods-aircredit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircredit.release.xcconfig"; path = "Target Support Files/Pods-aircredit/Pods-aircredit.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +141,6 @@
 		92608D1021B94C88000A419A /* aircredit */ = {
 			isa = PBXGroup;
 			children = (
-				92608D7B21B999A3000A419A /* SideMenu */,
 				92608D1121B94C88000A419A /* AppDelegate.swift */,
 				92608D1321B94C88000A419A /* ViewController.swift */,
 				92608D1521B94C88000A419A /* Main.storyboard */,
@@ -190,19 +177,6 @@
 				92608D7121B998C3000A419A /* video.mov */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		92608D7B21B999A3000A419A /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				92608D7E21B99A79000A419A /* MainViewController.swift */,
-				92608D7C21B99A17000A419A /* NavigationController.swift */,
-				92608D7421B99986000A419A /* MenuViewCell.swift */,
-				92608D7321B99986000A419A /* MenuViewController.swift */,
-				92608D7721B9999B000A419A /* RightViewCell.swift */,
-				92608D7821B9999B000A419A /* RightViewController.swift */,
-			);
-			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		92608D8021B99EDD000A419A /* Utilities */ = {
@@ -441,14 +415,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				92608D1421B94C88000A419A /* ViewController.swift in Sources */,
-				92608D7621B99987000A419A /* MenuViewCell.swift in Sources */,
-				92608D7521B99987000A419A /* MenuViewController.swift in Sources */,
 				92608D1221B94C88000A419A /* AppDelegate.swift in Sources */,
-				92608D7921B9999C000A419A /* RightViewCell.swift in Sources */,
-				92608D7D21B99A17000A419A /* NavigationController.swift in Sources */,
-				92608D7A21B9999C000A419A /* RightViewController.swift in Sources */,
 				92608D8221B99F0A000A419A /* DeviceInfo.swift in Sources */,
-				92608D7F21B99A7A000A419A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
