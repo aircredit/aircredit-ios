@@ -9,6 +9,7 @@
 import UIKit
 import AVKit
 import AVFoundation
+import LGSideMenuController
 
 class ViewController: UIViewController {
 
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
             
             let playerLayer = AVPlayerLayer(player: player)
             playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-            playerLayer.zPosition = -1
+            playerLayer.zPosition = 1
             playerLayer.frame = view.frame
             view.layer.addSublayer(playerLayer)
             
