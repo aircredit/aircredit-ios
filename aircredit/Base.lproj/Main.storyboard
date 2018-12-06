@@ -31,20 +31,6 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
-        <!--Side Menu Controller-->
-        <scene sceneID="S04-Vx-OFd">
-            <objects>
-                <viewController id="9fN-Ts-8oY" customClass="LGSideMenuController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wRH-RZ-6FM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7mm-CC-cxx"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEp-Rv-CzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
     <resources>
         <image name="video-still" width="1242" height="2208"/>
