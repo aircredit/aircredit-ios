@@ -7,7 +7,7 @@ target 'aircredit' do
 
   # Pods for aircredit
 
-  pod 'LGSideMenuController'
+  pod 'FlowingMenu'
 
   target 'aircreditTests' do
     inherit! :search_paths

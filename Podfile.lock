@@ -1,16 +1,16 @@
 PODS:
-  - LGSideMenuController (2.1.1)
+  - FlowingMenu (3.0.1)
 
 DEPENDENCIES:
-  - LGSideMenuController
+  - FlowingMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - LGSideMenuController
+    - FlowingMenu
 
 SPEC CHECKSUMS:
-  LGSideMenuController: ae40c80983ab8b8801c7cef0a6804d43aaa72d45
+  FlowingMenu: b98c9aace4e39c8d042d88f5612bcb13056b270d
 
-PODFILE CHECKSUM: 1767030ae7c99e8a91fbdf5374bd13606ad30c7c
+PODFILE CHECKSUM: 6cdb37acf0d75de90b0c33b58b65e4e95664c0d5
 
 COCOAPODS: 1.6.0.beta.2
