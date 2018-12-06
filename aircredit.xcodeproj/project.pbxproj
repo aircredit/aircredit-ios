@@ -14,6 +14,7 @@
 		92608D1C21B94C89000A419A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92608D1A21B94C89000A419A /* LaunchScreen.storyboard */; };
 		92608D2721B94C89000A419A /* aircreditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D2621B94C89000A419A /* aircreditTests.swift */; };
 		92608D3221B94C89000A419A /* aircreditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D3121B94C89000A419A /* aircreditUITests.swift */; };
+		92608D4321B95495000A419A /* video.mov in Resources */ = {isa = PBXBuildFile; fileRef = 92608D4221B95495000A419A /* video.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		92608D2D21B94C89000A419A /* aircreditUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aircreditUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92608D3121B94C89000A419A /* aircreditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aircreditUITests.swift; sourceTree = "<group>"; };
 		92608D3321B94C89000A419A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92608D4221B95495000A419A /* video.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		92608D1021B94C88000A419A /* aircredit */ = {
 			isa = PBXGroup;
 			children = (
+				92608D4221B95495000A419A /* video.mov */,
 				92608D1121B94C88000A419A /* AppDelegate.swift */,
 				92608D1321B94C88000A419A /* ViewController.swift */,
 				92608D1521B94C88000A419A /* Main.storyboard */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92608D4321B95495000A419A /* video.mov in Resources */,
 				92608D1C21B94C89000A419A /* LaunchScreen.storyboard in Resources */,
 				92608D1921B94C89000A419A /* Assets.xcassets in Resources */,
 				92608D1721B94C88000A419A /* Main.storyboard in Resources */,
