@@ -19,13 +19,20 @@ platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
 #  	sync_code_signing(type: "appstore")
-    increment_version_number(bump_type: "patch", xcodeproj: "aircredit.xcodeproj")
+
+    version = increment_version_number(bump_type: "patch", xcodeproj: "aircredit.xcodeproj")
+    sh("echo", "Incremented version to " << version)
+    sh("cd .. && xcrun agvtool new-version -all " << version, log: true)
+    sh("cd .. && xcrun agvtool new-marketing-version " << version, log: true)
+
     get_certificates           # invokes cert
 	  get_provisioning_profile   # invokes sigh
 
     build_app(workspace: "aircredit.xcworkspace", scheme: "aircredit")
-    changelog_from_git_commits
-    upload_to_testflight(changelog: "Add rocket emoji")
-    slack(message: "Successfully distributed a new beta build")
+    notification(subtitle: "Finished Building", message: "Ready to upload...", sound: "Purr")
+    say("Build Complete")
+    upload_to_testflight
+    notification(subtitle: "Finished Uploading", message: "Ready to test...", sound: "Purr")
+    say("Upload Complete")
   end
 end
