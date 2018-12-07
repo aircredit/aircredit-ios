@@ -7,6 +7,8 @@ target 'aircredit' do
 
   # Pods for aircredit
 
+  pod 'Fabric'
+  pod 'Crashlytics'
   pod 'FlowingMenu'
 
   target 'aircreditTests' do

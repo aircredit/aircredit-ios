@@ -1,16 +1,25 @@
 PODS:
+  - Crashlytics (3.12.0):
+    - Fabric (~> 1.9.0)
+  - Fabric (1.9.0)
   - FlowingMenu (3.0.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - FlowingMenu
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Crashlytics
+    - Fabric
     - FlowingMenu
 
 SPEC CHECKSUMS:
+  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FlowingMenu: b98c9aace4e39c8d042d88f5612bcb13056b270d
 
-PODFILE CHECKSUM: 6cdb37acf0d75de90b0c33b58b65e4e95664c0d5
+PODFILE CHECKSUM: fead93bd5f3c8eaaf333b39ec019003d3566d2b4
 
 COCOAPODS: 1.6.0.beta.2
