@@ -92,7 +92,14 @@ end
 
 ############################# LANES ################################
 
+def init
+  if $fabricBuildSecret.nil? || $fabricBuildSecret.empty?
+    fatal "FABRIC_BUILD_SECRET environment variable not set. Please set it using\nexport FABRIC_BUILD_SECRET='YOUR_FABRIC_BUILD_SECRET_KEY'"
+  end
+end
+
 def makePandasHappy
+    init
     certificates
     incrementVersion $appXcodeproj, "patch"
     build $appXcworkspace, $appName
