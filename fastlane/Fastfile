@@ -21,6 +21,7 @@ $appName = 'aircredit'
 $appXcodeproj = $appName + '.xcodeproj'
 $appXcworkspace = $appName + '.xcworkspace'
 $fabricApiToken = 'fb931df74542114fa1c1ffbdfe87dadd77189efa'
+$fabricBuildSecret = ENV['FABRIC_BUILD_SECRET']
 
 ############################# UTILITIES  ################################
 
@@ -80,8 +81,7 @@ def upload target
   when "testfligkt"
     upload_to_testflight
   when "fabric"
-    buildSecret = ENV['FABRIC_BUILD_SECRET']
-    crashlytics api_token: $fabricApiToken, build_secret: buildSecret
+    crashlytics api_token: $fabricApiToken, build_secret: $fabricBuildSecret
   else
     fatal "Unknown upload target " + target
   end
