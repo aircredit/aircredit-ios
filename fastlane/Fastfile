@@ -92,7 +92,7 @@ end
 
 ############################# LANES ################################
 
-def fullBuild
+def makePandasHappy
     certificates
     incrementVersion $appXcodeproj, "patch"
     build $appXcworkspace, $appName
@@ -101,12 +101,12 @@ end
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    fullBuild
+    makePandasHappy
     upload "testfligkt"
   end
   desc "Push a new beta build to Crashlytics"
   lane :fabric do
-    fullBuild
+    makePandasHappy
     upload "fabric"
   end
 end
