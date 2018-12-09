@@ -15,24 +15,98 @@
 
 default_platform(:ios)
 
+############################# CONFIG     ################################
+
+$appName = 'aircredit'
+$appXcodeproj = $appName + '.xcodeproj'
+$appXcworkspace = $appName + '.xcworkspace'
+$fabricApiToken = 'fb931df74542114fa1c1ffbdfe87dadd77189efa'
+
+############################# UTILITIES  ################################
+
+def log message
+    sh "echo " + message
+end
+
+def fatal message
+  log message
+  UI.user_error!(message)
+end
+
+def notify title, message
+    notification subtitle: title, message: message, sound: "Purr"
+end
+
+def voice message
+    say message
+end
+
+############################# VERSIONING ################################
+
+def setVersion version
+    log "Setting version to " + version
+    sh "cd .. && xcrun agvtool new-version -all " + version, log: true
+    sh "cd .. && xcrun agvtool new-marketing-version " + version, log: true
+end
+
+def incrementVersion projectFile, level
+    log "Incrementing version " + level
+    version = increment_version_number bump_type: level, xcodeproj: projectFile
+    log "Incremented version to " + version
+    setVersion version
+end
+
+############################# CERTIFICATES ################################
+
+def certificates
+#   sync_code_signing(type: "appstore")
+    get_certificates           # invokes cert
+    get_provisioning_profile   # invokes sigh
+end
+
+############################# BUILD ################################
+
+def build workspace, scheme
+    build_app workspace: workspace, scheme: scheme
+    notify "Finished Building", "Ready to upload..."
+    voice "Build Complete"
+end
+
+############################# UPLOAD ################################
+
+def upload target
+
+  case target
+  when "testfligkt"
+    upload_to_testflight
+  when "fabric"
+    buildSecret = ENV['FABRIC_BUILD_SECRET']
+    crashlytics api_token: $fabricApiToken, build_secret: buildSecret
+  else
+    fatal "Unknown upload target " + target
+  end
+
+  notify "Finished Uploading", "Ready to test..."
+  voice "Upload Complete"
+end
+
+############################# LANES ################################
+
+def fullBuild
+    certificates
+    incrementVersion $appXcodeproj, "patch"
+    build $appXcworkspace, $appName
+end
+
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-#  	sync_code_signing(type: "appstore")
-
-    version = increment_version_number(bump_type: "patch", xcodeproj: "aircredit.xcodeproj")
-    sh("echo", "Incremented version to " << version)
-    sh("cd .. && xcrun agvtool new-version -all " << version, log: true)
-    sh("cd .. && xcrun agvtool new-marketing-version " << version, log: true)
-
-    get_certificates           # invokes cert
-	  get_provisioning_profile   # invokes sigh
-
-    build_app(workspace: "aircredit.xcworkspace", scheme: "aircredit")
-    notification(subtitle: "Finished Building", message: "Ready to upload...", sound: "Purr")
-    say("Build Complete")
-    upload_to_testflight
-    notification(subtitle: "Finished Uploading", message: "Ready to test...", sound: "Purr")
-    say("Upload Complete")
+    fullBuild
+    upload "testfligkt"
+  end
+  desc "Push a new beta build to Crashlytics"
+  lane :fabric do
+    fullBuild
+    upload "fabric"
   end
 end
