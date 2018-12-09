@@ -106,11 +106,22 @@ def makePandasHappy
 end
 
 platform :ios do
+  before_all do
+    setup_circle_ci
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan
+    snapshot
+  end
+  
   desc "Push a new beta build to TestFlight"
   lane :beta do
     makePandasHappy
     upload "testfligkt"
   end
+
   desc "Push a new beta build to Crashlytics"
   lane :fabric do
     makePandasHappy

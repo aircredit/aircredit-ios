@@ -20,6 +20,20 @@
                ReferencedContainer = "container:aircredit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9262DFA621BDCB2800E35879"
+               BuildableName = "fastlaneSnapshots.xctest"
+               BlueprintName = "fastlaneSnapshots"
+               ReferencedContainer = "container:aircredit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,26 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92608D2121B94C89000A419A"
-               BuildableName = "aircreditTests.xctest"
-               BlueprintName = "aircreditTests"
-               ReferencedContainer = "container:aircredit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92608D2C21B94C89000A419A"
-               BuildableName = "aircreditUITests.xctest"
-               BlueprintName = "aircreditUITests"
-               ReferencedContainer = "container:aircredit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
