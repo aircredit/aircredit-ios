@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        Log.i("Application finished launching")
+        Log.i("Initializing Fabric")
         Fabric.with([Crashlytics.self])
         // TODO: Move this to where you establish a user session
         logUser()
@@ -47,6 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func logUser() {
+        Log.i("Logging user to crashlytics")
+
         // TODO: Use the current user's information
         // You can call any combination of these three methods
         Crashlytics.sharedInstance().setUserEmail("michak@michak.net")

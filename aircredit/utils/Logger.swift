@@ -41,15 +41,6 @@ func print(_ object: Any) {
 
 class Log {
     
-    static var dateFormat = "yyyy-MM-dd hh:mm:ssSSS"
-    static var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = dateFormat
-        formatter.locale = Locale.current
-        formatter.timeZone = TimeZone.current
-        return formatter
-    }
-    
     private static var isLoggingEnabled: Bool {
         #if DEBUG
         return true
@@ -153,6 +144,15 @@ class Log {
     private class func sourceFileName(filePath: String) -> String {
         let components = filePath.components(separatedBy: "/")
         return components.isEmpty ? "" : components.last!
+    }
+
+    static var dateFormat = "yyyy-MM-dd hh:mm"
+    static var dateFormatter: DateFormatter {
+        let formatter = DateFormatter()
+        formatter.dateFormat = dateFormat
+        formatter.locale = Locale.current
+        formatter.timeZone = TimeZone.current
+        return formatter
     }
 }
 
