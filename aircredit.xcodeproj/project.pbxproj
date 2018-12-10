@@ -22,6 +22,8 @@
 		9262DFAA21BDCB2800E35879 /* fastlaneSnapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262DFA921BDCB2800E35879 /* fastlaneSnapshots.swift */; };
 		9262DFB121BDCB7E00E35879 /* aircreditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92608D3121B94C89000A419A /* aircreditUITests.swift */; };
 		9262DFB321BDCCA400E35879 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262DFB221BDCCA300E35879 /* SnapshotHelper.swift */; };
+		9262DFB521BE921F00E35879 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262DFB421BE921F00E35879 /* MenuViewController.swift */; };
+		9262DFB821BE929F00E35879 /* UserChatCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262DFB721BE929F00E35879 /* UserChatCellView.swift */; };
 		92FB411221BD5E3200594F40 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB411121BD5E3200594F40 /* Logger.swift */; };
 		AA546819C17754850B8BA372 /* libPods-aircredit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7E1D53F95142A076A8534C /* libPods-aircredit.a */; };
 		E033E39D4AAC2B58C703E618 /* libPods-aircreditUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC27D9B8A8FE4E2267E7DB31 /* libPods-aircreditUITests.a */; };
@@ -78,6 +80,8 @@
 		9262DFA921BDCB2800E35879 /* fastlaneSnapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fastlaneSnapshots.swift; sourceTree = "<group>"; };
 		9262DFAB21BDCB2800E35879 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9262DFB221BDCCA300E35879 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		9262DFB421BE921F00E35879 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9262DFB721BE929F00E35879 /* UserChatCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChatCellView.swift; sourceTree = "<group>"; };
 		92FB411121BD5E3200594F40 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		93BA77FFFE70B8C5B0AE0D64 /* Pods-aircreditUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditUITests.debug.xcconfig"; path = "Target Support Files/Pods-aircreditUITests/Pods-aircreditUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99B26546F51929CC8A178181 /* Pods-aircreditUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aircreditUITests.release.xcconfig"; path = "Target Support Files/Pods-aircreditUITests/Pods-aircreditUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,8 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				92608D9121B9CB55000A419A /* models */,
+				9262DFB621BE928200E35879 /* cells */,
 				92608D1121B94C88000A419A /* AppDelegate.swift */,
 				92608D1321B94C88000A419A /* ViewController.swift */,
+				9262DFB421BE921F00E35879 /* MenuViewController.swift */,
 				92608D1521B94C88000A419A /* Main.storyboard */,
 				92608D1A21B94C89000A419A /* LaunchScreen.storyboard */,
 				92608D1D21B94C89000A419A /* Info.plist */,
@@ -237,6 +243,14 @@
 				9262DFAB21BDCB2800E35879 /* Info.plist */,
 			);
 			path = fastlaneSnapshots;
+			sourceTree = "<group>";
+		};
+		9262DFB621BE928200E35879 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				9262DFB721BE929F00E35879 /* UserChatCellView.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +514,8 @@
 				92FB411221BD5E3200594F40 /* Logger.swift in Sources */,
 				92608D9321B9CB73000A419A /* User.swift in Sources */,
 				92608D8221B99F0A000A419A /* DeviceInfo.swift in Sources */,
+				9262DFB521BE921F00E35879 /* MenuViewController.swift in Sources */,
+				9262DFB821BE929F00E35879 /* UserChatCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
