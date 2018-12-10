@@ -115,7 +115,7 @@ platform :ios do
     scan
     snapshot
   end
-  
+
   desc "Push a new beta build to TestFlight"
   lane :beta do
     makePandasHappy
@@ -126,5 +126,16 @@ platform :ios do
   lane :fabric do
     makePandasHappy
     upload "fabric"
+  end
+
+  desc "Generate all screenshots according to fastline/Snapfile"
+  lane :screenshots do
+    capture_screenshots
+  end
+
+  desc "Push a release to the App Store"
+  lane :release do
+    makePandasHappy
+    deliver
   end
 end
