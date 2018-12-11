@@ -9,10 +9,12 @@
 import UIKit
 import AVKit
 import AVFoundation
+import SwiftCharts
 
 class ViewController: UIViewController {
 
     private var player: AVPlayer!
+    @IBOutlet weak var VideoStillBackground: UIImageView!
     
     override func viewDidLoad() {
         
@@ -27,12 +29,9 @@ class ViewController: UIViewController {
             
             let playerLayer = AVPlayerLayer(player: player)
             playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-            playerLayer.zPosition = 1
+            VideoStillBackground.layer.addSublayer(playerLayer)
             playerLayer.frame = view.frame
-            view.layer.addSublayer(playerLayer)
-            
             player?.play()
-            
             //loop video
             NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.player.currentItem, queue: .main) { [weak self] _ in
                 self?.player?.seek(to: CMTime.zero)

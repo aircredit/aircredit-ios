@@ -9,7 +9,8 @@ target 'aircredit' do
 
   pod 'Fabric'
   pod 'Crashlytics'
-  pod 'FlowingMenu'
+  pod 'SwiftCharts', '~> 0.6.3'
+  pod 'Hero'
 
   target 'aircreditTests' do
     inherit! :search_paths
