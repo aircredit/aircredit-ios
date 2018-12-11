@@ -171,14 +171,12 @@
 		92608D1021B94C88000A419A /* aircredit */ = {
 			isa = PBXGroup;
 			children = (
-				92608D9121B9CB55000A419A /* models */,
 				92608D1121B94C88000A419A /* AppDelegate.swift */,
 				92608D1321B94C88000A419A /* ViewController.swift */,
 				92608D1521B94C88000A419A /* Main.storyboard */,
-				92608D1A21B94C89000A419A /* LaunchScreen.storyboard */,
-				92608D1D21B94C89000A419A /* Info.plist */,
-				92608D1821B94C89000A419A /* Assets.xcassets */,
+				92608D9121B9CB55000A419A /* models */,
 				92608D8021B99EDD000A419A /* utils */,
+				92856F5621BF472400EE2BA6 /* Supporting Items */,
 				92608D7021B998A6000A419A /* resources */,
 			);
 			path = aircredit;
@@ -237,6 +235,16 @@
 				9262DFAB21BDCB2800E35879 /* Info.plist */,
 			);
 			path = fastlaneSnapshots;
+			sourceTree = "<group>";
+		};
+		92856F5621BF472400EE2BA6 /* Supporting Items */ = {
+			isa = PBXGroup;
+			children = (
+				92608D1821B94C89000A419A /* Assets.xcassets */,
+				92608D1A21B94C89000A419A /* LaunchScreen.storyboard */,
+				92608D1D21B94C89000A419A /* Info.plist */,
+			);
+			path = "Supporting Items";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
